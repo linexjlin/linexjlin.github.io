@@ -1,3 +1,7 @@
+---
+layout: post
+title: go-oci8 使用
+---
 # go-oci8 使用
  
 ## Linux 下OCI 配置
