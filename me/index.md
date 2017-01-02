@@ -2,10 +2,11 @@
 layout: about
 ---
 
-Hello, my name is Micah Cowell. I am a self proclaimed web developer who likes the internet, hip hop, and fancy yo-yos.
+Hi!, I am Line Xiongjie Lin (林雄杰). A DBA, Developer, vimer, SA, SAr.
 
-# What do you do?
-I make website and stuff. All the code I write is on my [Github](https://github.com/getmicah).
+##Contact me with
+Mobile: Kzg2MTc3MTc4NTQ2OTM= (base64)
+Email: line.xj.lin(gmail)
+Telegram: [linxj](https://telegram.me/linxj)
+Wechat: red_land
 
-# What programming languages do you use?
-When making websites I like using Javascript and Sass. I also like Python and making linux scripts.
