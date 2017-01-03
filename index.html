@@ -1,42 +1,27 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="header">
-    <h1>{{ site.name }}</h1>
-    <ul>
-        {% for item in site.data.navigation %}
-        <li>
-            <a href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
-<div class="blog">
-    <h1>Blog Posts:</h1>
-    <ul>
-        {% for post in site.posts %}
-        <li>
-            <span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
+{% include intro.html %}
 
-<!--
-<div class="music">
-    <h1>Now Playing:</h1>
-    <a href="http://www.last.fm/user/getmicah"><span id="nowPlaying"></span></a>
-</div>
-<script src="/assets/js/main.js"></script>
--->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<section class="post-list">
+  <div class="container">
+    {% for post in site.posts %}
+      {% unless post.next %}
+        <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
+      {% else %}
+        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+        {% if year != nyear %}
+          <h2 class="category-title">{{ post.date | date: '%Y' }}</h2>
+        {% endif %}
+      {% endunless %}
+      <article class="post-item">
+        <span class="post-meta date-label">{{ post.date | date: "%b %d" }}</span>
+        <div class="article-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+      </article>
+    {% endfor %}
+  </div>
 
-  ga('create', 'UA-40947781-3', 'auto');
-    ga('send', 'pageview');
-
-</script>
+</section>
