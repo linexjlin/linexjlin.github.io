@@ -14,4 +14,6 @@ Email: line.xj.lin(gmail)
 
 Telegram: [linxj](https://telegram.me/linxj)
 
-Wechat: red_land
+Wechat: red_land 
+
+![red_land](https://up.linkown.com/img/red_land.jpg)
