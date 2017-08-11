@@ -11,7 +11,7 @@ baseurl: null # apply null if repo name is something like username.github.io
 google_analytics: UA-40947781-3
 repo: http://github.com/heiswayi/thinkspace
 disqus_shortname: "linexjlin"
-duoshuo_shortname: "linxj"
+uyan_id: "2141341"
 twitter_username: "linexjlin"
 comments: true 
 
