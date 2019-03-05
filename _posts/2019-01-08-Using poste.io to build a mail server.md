@@ -18,7 +18,7 @@ cname | imap | 130.255.76.237| 600
 mx | @| mail.dba.pw | 600
 text | @|  "v=spf1 mx ~all" | 600
 text | _dmarc.dba.pw | "v=DMARC1; p=none; rua=mailto:dmarc-reports@dba.pw"| 600
-
+s20190305648._domainkey.dba.pw | txt | "xxxx" 
 # start poste.io docker
 ```
 docker run \
