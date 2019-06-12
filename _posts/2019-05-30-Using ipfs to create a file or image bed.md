@@ -22,7 +22,7 @@ ipfs.ee {
                 transparent
         }
 
-        proxy /api 127.0.0.1:5001 {
+        proxy /api/v0/add 127.0.0.1:5001 {
                 transparent
         }
 
